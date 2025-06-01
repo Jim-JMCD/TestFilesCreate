@@ -87,6 +87,7 @@ __OPTIONS: Optional__
 __LOGGING__
 * None. In batch mode user has to redirect output to a file  
 * Progress indicated by time stamping every ten directories filled with files.
+* The 'script' command can be used in interactive mode to record all activty. 
  
 __LIMITATIONS__
 
