@@ -13,7 +13,7 @@ TestFilesCreate is a Linux portable executable created from the bash script [TFi
 
 ### Dependency
 This requires a bash environment to run. 
-An executable created from the *shc* utility always requires bash on X64
+An executable created from the *shc* utility always requires bash on x64
 
 More : [Github shc](https://github.com/neurobin/shc)   
 _______________________________________________________________________
@@ -42,8 +42,6 @@ For the following, _n_ is a number, minimum is 1
 * -d _n_   Depth. How many directories deep.  
 * -w _n_   Width. How many directories wide.  
 
-Maximum permitted values, see __Limitations__ section  
-
 Create single directory: -d 1 (-w if set, will be ignored) 
 
 Create tree of directories: 
@@ -63,7 +61,7 @@ _Random File Size_
 * All files individually filled with random content. 
 * -s Smallest file size.
 * -l Largest file size. 
-* If -s is omitted, the random range starts at 2B (2 bytes) if largest file size is <1G or 1M (1MiB) if largest file size is >= 1G
+* If -s is omitted, the random range starts at 2B (2 bytes) if largest file size is <1G, smallest size will be 1M (1MiB) if largest file size is >= 1G
 
 __OPTIONS: Optional__
 * __-P _n___   Where _n_ is a nuber in the range 1 to 95. Selects the pool of printable characters from the ASCII set. 
