@@ -7,7 +7,10 @@
  * Files can be identical or individully filled with random content.
  * File contents can either be printable or binary. All contents generated from /dev/urandom. 
  * Files sizes can be identical or randomly sized within a given range.
- * Run either interactively or unaccompanied in batch mode. 
+ * Run either interactively or unaccompanied in batch mode.
+
+See __Comaparitive testing of Data Compression and Deduplication__ section on how TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
+ 
 _______________________________________________________________________
 TestFilesCreate is a Linux portable x64 executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc.
 
@@ -148,6 +151,11 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Total data files............1000
     Do you want to proceed? (y/n)
 
-## Comaparitive testing of Compression and Deduplication
+## Comaparitive testing of Data Compression and Deduplication
+TestFileCreate can be used as a standardised method for compaing data storage reduction techniques. 
 
-![Image Alt](image_url)
+In these examples the __Data Complexity__ is set by the __-P option__.  A data complexity of 10 = -P 10 and a data complexity of 12 = -P 12
+
+For more information see [TestFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/TestFilesCreate-Datasheet.pdf ).
+
+![Test Image](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/image)
