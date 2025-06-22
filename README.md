@@ -5,11 +5,11 @@
  * Includes a calculator for creating data in directory trees. [ Option -C ]
  * Will create a single file to directory trees of files, minimum file size = 2 bytes   
  * Files can be identical or individully filled with random content.
- * File contents can either be printable or binary (from /dev/urandom) 
+ * File contents can either be printable or binary. All contents generated from /dev/urandom. 
  * Files sizes can be identical or randomly sized within a given range.
  * Run either interactively or unaccompanied in batch mode. 
 _______________________________________________________________________
-TestFilesCreate is a Linux portable executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc. 
+TestFilesCreate is a Linux portable x64 executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc.
 
 ### Dependency
 This requires a bash environment to run. 
@@ -92,7 +92,7 @@ Data creation bails out before any data creation if:
 * The number of files to be created exceeds 100 million
 * If the 'shuf' command is not available 
 * if the -c option not avaiable for the 'head' command.
-* For x64 Linux.
+* For x64 Linux. Do do list: AArch64/ARM64 version.
 
 If the 'seq' command is not avaiable. The character pool will not be displayed in the inital summary. The seq command is not required for file creation.
 
@@ -147,3 +147,7 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Total data directories.........1
     Total data files............1000
     Do you want to proceed? (y/n)
+
+## Comaparitive testing of Compression and Deduplication
+
+![Image Alt](image_url)
