@@ -9,7 +9,7 @@
  * Files sizes can be identical or randomly sized within a given range.
  * Run either interactively or unaccompanied in batch mode.
 
-See __Comaparitive testing of Data Compression and Deduplication__ section on how TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
+See __Comaparitive testing of data compression and deduplication__ section on how TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
  
 _______________________________________________________________________
 TestFilesCreate is a Linux portable x64 executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc.
@@ -100,6 +100,9 @@ Data creation bails out before any data creation if:
 If the 'seq' command is not avaiable. The character pool will not be displayed in the inital summary. The seq command is not required for file creation.
 
 Binary data is generated from /dev/urandom. This data will not compress that well. Binary data that is stored/transmitted may render data deduplication and compression ineffective.  
+
+__FILE CONTENT VALIDATION__
+
 ___Validate contents: all Files:___
 
     od -N <bytes> -Ax -t x1z <file name>
@@ -112,13 +115,14 @@ ___Validate printable character distribution:___
     od -a <file name>  | cut -b 9- | tr " " \\n | egrep -v "^$" | sort | uniq -c
     OR
     sed 's/\(.\)/\1\n/g' <file name> | sort | uniq -c
-    
-    
+        
 _Output_
 * Column 1 : Character count
-* Column 2 : Character being counted. This column should only contain a single charcter, if not then file contents is binary data.
+* Column 2 : Character being counted. NOTE : This column should only contain a single charcter, _if more than one character then file contents is binary data_. 
 
-___Validate printable character pool count:___
+___Validate printable character pool count:___ 
+
+Example: confirms that a complexity of 17 given by __-P 17__ contains a pool of 17 different characters. 
 
     od -a <file name>  | cut -b 9- | tr " " \\n | egrep -v "^$" | sort | uniq -c | wc -l
     OR
@@ -151,11 +155,11 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Total data files............1000
     Do you want to proceed? (y/n)
 
-## Comaparitive testing of Data Compression and Deduplication
-TestFileCreate can be used as a standardised method for compaing data storage reduction techniques. 
+## Comaparitive testing of data compression and deduplication
+TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
 
 In these examples the __Data Complexity__ is set by the __-P option__.  A data complexity of 10 = -P 10 and a data complexity of 12 = -P 12
 
-For more information see [TestFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/TestFilesCreate-Datasheet.pdf ).
+For more information on the creation of the charts see [TestFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/TestFilesCreate-Datasheet.pdf ).
 
 ![Test Image](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/image)
