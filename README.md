@@ -41,7 +41,7 @@ __DEFAULTS__
 
 __OPTIONS :__ 
 
-___Directory Layout:___ _all mandatory_
+___Directory Layout___ _All mandatory_
 
 For the following, _n_ is a number, minimum is 1   
 * -n _n_   Number of files in each directory.
