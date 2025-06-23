@@ -9,7 +9,7 @@
  * Files sizes can be identical or randomly sized within a given range.
  * Run either interactively or unaccompanied in batch mode.
 
-See __Comaparitive testing of data compression and deduplication__ section on how TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
+See __Comaparitive testing of data compression and deduplication__ section on how TestFileCreate can be used as a standardised benchmark for comparing data storage reduction techniques. 
  
 _______________________________________________________________________
 TestFilesCreate is a Linux portable x64 executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc.
