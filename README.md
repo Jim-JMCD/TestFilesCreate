@@ -4,7 +4,7 @@
  
  * Includes a calculator for creating data in directory trees. [ Option -C ]
  * Will create a single file to directory trees of files, minimum file size = 2 bytes   
- * Files can be identical or individully filled with random content.
+ * Files can be identical or individually filled with random content.
  * File contents can either be printable or binary. All contents generated from /dev/urandom. 
  * Files sizes can be identical or randomly sized within a given range.
  * Run either interactively or unaccompanied in batch mode.
