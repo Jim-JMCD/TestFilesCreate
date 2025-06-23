@@ -1,5 +1,5 @@
 $ md5sum TestFilesCreate
-14bc210693474099b706f70ba8db7d7d  testFilesCreate
+14bc210693474099b706f70ba8db7d7d  TestFilesCreate
 
 $ file TestFilesCreate
 TestFilesCreate: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, 
