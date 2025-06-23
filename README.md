@@ -39,7 +39,10 @@ __DEFAULTS__
 
  Maximum permitted values, see __Limitations__ section    
 
-__OPTIONS : Directory Layout__ All mandatory
+__OPTIONS :__ 
+
+___Directory Layout:___ _all mandatory_
+
 For the following, _n_ is a number, minimum is 1   
 * -n _n_   Number of files in each directory.
 * -d _n_   Depth. How many directories deep.  
@@ -51,7 +54,7 @@ Create tree of directories:
 * Depth min is -d 2
 * Width min is -w 1 and manditory  
 
-__OPTIONS : File Size and Content__ A file size is mandatory
+___File Size___ _A file size is mandatory_
 
 *Fixed File Size*
  * File sizes have to be designated by B, K, M or G. Minimum is 2B (2 bytes). Example 2KiB = 2K, 3MiB = 3M 4GiB = 4G   
@@ -66,8 +69,9 @@ _Random File Size_
 * -l Largest file size. 
 * If -s is omitted, the random range starts at 2B (2 bytes) if largest file size is <1G, smallest size will be 1M (1MiB) if largest file size is >= 1G
 
-__OPTIONS: Optional__
-* __-P _n___   Where _n_ is a nuber in the range 1 to 95. Selects the pool of printable characters from the ASCII set. 
+___File Contents___ _Default is random binary_
+
+* __-P _n___   Where _n_ is a number in the range 1 to 95. Selects the pool of printable characters from the ASCII set.
   * _n_ = 1 files only contain the uppercase 'A' 
   * _n_ = 2 to 26 files only contain lowercase Latin alphabet characters
   * _n_ >26 files contain printable ASCII characters. Max n = 95 
@@ -76,15 +80,15 @@ __OPTIONS: Optional__
   * _n_ = 1 files only contain zeros '0'
   * _n_ > 1 files contain digits. Max n = 10
 
-* _-o_ Output to directory that already exists.
 * _-r_ Random content for fixed file sizes.
-* _-o_ Output to an _existing_ directory.
-  * Defaults to current working directory
-  * Creates a new time stamped directory for content (tfc_YYMMDD_hhmm_ss).
-* _-b_ Batch/quiet run with no user checks. Default is interactive with user input. 
 
-__LOGGING__
-* None. In batch mode user has to redirect output to a file  
+ __INPUT, OUTPUT and LOGGING__
+ 
+* _-o_ Output to an _existing_ directory.
+* Defaults to current working directory
+* Creates a new time stamped directory for content (tfc_YYMMDD_hhmm_ss).
+* _-b_ Batch/quiet run with no user checks. Default is interactive with user input. 
+* No logging. In batch mode user has to redirect output to a file  
 * Progress indicated by time stamping every ten directories filled with files.
 * The 'script' command can be used in interactive mode to record all activty. 
  
@@ -156,7 +160,7 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Do you want to proceed? (y/n)
 
 ## Comaparitive testing of data compression and deduplication
-TestFileCreate can be used as a standardised method for comparing data storage reduction techniques. 
+TestFileCreate can be used as a standardised benchmark for comparing data storage reduction techniques. 
 
 In these examples the __Data Complexity__ is set by the __-P option__.  A data complexity of 10 = -P 10 and a data complexity of 12 = -P 12
 
