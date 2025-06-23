@@ -159,7 +159,7 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Total data files............1000
     Do you want to proceed? (y/n)
 
-## Comaparitive testing of data compression and deduplication
+## Comaparitive benchmark testing of data compression and deduplication
 TestFileCreate can be used as a standardised benchmark for comparing data storage reduction techniques. 
 
 In these examples the __Data Complexity__ is set by the __-P option__.  A data complexity of 10 = -P 10 and a data complexity of 12 = -P 12
