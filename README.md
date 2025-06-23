@@ -84,10 +84,10 @@ ___File Contents___ _Default is random binary_
 
  __INPUT, OUTPUT and LOGGING__
  
+* _-b_ Batch/quiet run with no user checks. Default is interactive with user input.  
 * _-o_ Output to an _existing_ directory.
 * Defaults to current working directory
 * Creates a new time stamped directory for content (tfc_YYMMDD_hhmm_ss).
-* _-b_ Batch/quiet run with no user checks. Default is interactive with user input. 
 * No logging. In batch mode user has to redirect output to a file  
 * Progress indicated by time stamping every ten directories filled with files.
 * The 'script' command can be used in interactive mode to record all activty. 
