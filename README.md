@@ -1,5 +1,5 @@
 # TestFilesCreate
-This repositiry only contains X86-64 excutable.  For the ARM verion [TestFilesCreate_for_ARM_aarch64](https://github.com/Jim-JMCD/TestFilesCreate_for_ARM_aarch64)
+This repositiry only contains X86-64 excutable.  For the ARM version go to [TestFilesCreate_for_ARM_aarch64](https://github.com/Jim-JMCD/TestFilesCreate_for_ARM_aarch64)
 
 
  A small Linux app that creates test files filling them with random data in a single directory or a directory tree. 
