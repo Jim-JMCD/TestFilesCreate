@@ -64,10 +64,10 @@ Start Fri Sep 19 10:55:33 UTC 2025
 
 Example 3
 
-* Create a directory tree with a depth of 4 and a width of 6. **-d 4 -w 6**
-* Each directory to be filed with 75 files that have random sizes between 500KiB and 2MiB. **-s 500K -l 2M**
-* Each file filled with the complete lower case alphabet. **-P 26**
-* Each file to be filled with its random own set on alphabet letters. **-r**
+* Create a directory tree with a depth of 4 and a width of 6. **[ -d 4 -w 6 ]**
+* Each directory to be filed with 75 files that have random sizes between 500KiB and 2MiB. **[ -s 500K -l 2M  ]**
+* Each file filled with the complete lower case alphabet. **[ -P 26 ]**
+* Each file to be filled with its random own set on alphabet letters. **[ -r ]**
 * If only the first ten letters of the alphabet required use **-P 10**  
 ~~~
 $./TFileCreate -P 26 -d 4 -w 6 -s 500K -l 2M -n 75 -r
@@ -84,7 +84,12 @@ DIRECTORTY TREE each directory contains 6 directories and 75 files
   Total data directories.......258
   Total data files...........19425
 ~~~~
+Example 4
 
+* Create a single file **[ -d 1 -w 1 -n 1 ]**
+* File size to be 500 GiB **[ -f 500G ]**
+* File to be filled with random digits (0 - 9 )  **[ -r -D 10 ]**
+* If only the first five digits required use **-D 5** 
 
 ~~~~
 $./TFileCreate -D 10 -d 1 -w 1 -f 500G -n 1 -r
