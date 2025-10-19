@@ -27,6 +27,8 @@ _______________________________________________________________________
 
 [Examples using TestFileCreate to calculate storage requirements plus directories and files created](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20use%20the%20caculator%20mode.md) 
 
+[TestFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/c385fe822281d447462b42fa25789fec1d92cb15/Datasheet-TestFilesCreate.pdf)
+
 _______________________________________________________________________
 
 
