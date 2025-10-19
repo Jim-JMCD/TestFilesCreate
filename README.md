@@ -23,6 +23,12 @@ An executable created from the *shc* utility always requires bash on x64
 
 More : [Github shc](https://github.com/neurobin/shc)   
 _______________________________________________________________________
+[Examples using TestFileCreate to create data](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20create%20data.md)
+
+[Examples using TestFileCreate to calculate storage requirements plus directories and files created](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20use%20the%20caculator%20mode.md) 
+
+_______________________________________________________________________
+
 
 ## CALCULATOR mode  (interactive, tree only) 
 
