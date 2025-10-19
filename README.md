@@ -1,5 +1,5 @@
 # TestFilesCreate
-This repository only contains X86-64 excutable.  For the ARM version go to [TestFilesCreate_for_ARM_aarch64](https://github.com/Jim-JMCD/TestFilesCreate_for_ARM_aarch64)
+#### This repository only contains X86-64 excutable.  For the ARM version go to [TestFilesCreate_for_ARM_aarch64](https://github.com/Jim-JMCD/TestFilesCreate_for_ARM_aarch64)
 
 
  A small Linux app that creates test files filling them with random data in a single directory or a directory tree. 
@@ -110,7 +110,6 @@ Data creation bails out before any data creation if:
 * The number of files to be created exceeds 100 million
 * If the 'shuf' command is not available 
 * if the -c option not avaiable for the 'head' command.
-* For x64 Linux. Do do list: AArch64/ARM64 version.
 
 If the 'seq' command is not avaiable. The character pool will not be displayed in the inital summary. The seq command is not required for file creation.
 
@@ -144,8 +143,8 @@ Example: confirms that a complexity of 17 given by __-P 17__ contains a pool of 
     sed 's/\(.\)/\1\n/g' <file name> | sort | uniq -c | wc -l 
 _________________________________________________________________________________________________________
 EXAMPLES 
-
-__TestFilesCreate -P 28 -d 3 -w 5 -f 15M -n 50__
+~~~
+TestFilesCreate -P 28 -d 3 -w 5 -f 15M -n 50__
 
     DIRECTORY TREE each directory contains 5 directories and 50 files
     The tree is 3 levels deep
@@ -157,8 +156,9 @@ __TestFilesCreate -P 28 -d 3 -w 5 -f 15M -n 50__
     Total data directories........30
     Total data files............1550
     Do you want to proceed? (y/n)
-
-__TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
+~~~
+~~~
+TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
 
     SINGLE DIRECTORY containing 1000 files
     Output: /home/ted/test/tfc_240930-1802-53
@@ -169,6 +169,7 @@ __TestFilesCreate -D 5 -d 1 -f 600K -n 1000 -r -o /home/ted/test__
     Total data directories.........1
     Total data files............1000
     Do you want to proceed? (y/n)
+~~~
 _________________________________________________________________________________________________________
 ## Comaparitive benchmark testing of data compression and deduplication
 TestFileCreate can be used as a standardised benchmark for comparing data storage reduction techniques. 
