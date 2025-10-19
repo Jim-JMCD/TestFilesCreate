@@ -63,7 +63,7 @@ Width   5 |    14.06G    72.66G   365.62G     1.79T     8.94T    44.70T   223.52
 
  Run again [y/n]
 ~~~
-Previous example tree depth was 5 and width 10, his example tree depth is 10 and width 5. This examples highlights the impact of tree depth
+Previous example tree depth was 5 and width 10, this example tree depth is 10 and width 5. This highlights the impact of tree depth
 ~~~
   File size requires units of B, K, M or G, the number must >1 decimals not permitted
   i.e. 750K 34M  2G and 10B (10 bytes)
