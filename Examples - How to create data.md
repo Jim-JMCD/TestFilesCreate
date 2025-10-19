@@ -1,6 +1,4 @@
-
-
-**Examples of test data creation** 
+## Examples of test data creation 
 
 Example 1
 
