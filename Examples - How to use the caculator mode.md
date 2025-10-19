@@ -24,7 +24,7 @@ User input required for tree depth, width, number of files per directory and siz
  SHOW DETAILS - Tree tables [y/n] y
 ~~~
 **Tree tables** 
-* Displays the calculated contents of the current tree query plus all trees of smaller dimensions    
+* Displays the calculated contents of the current calculation query plus all trees of smaller dimensions    
 * Provides a directory count, files in each tree and storage that will be used.
 
 ~~~
