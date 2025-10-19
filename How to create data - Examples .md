@@ -65,10 +65,11 @@ Start Fri Sep 19 10:55:33 UTC 2025
 Example 3
 
 * Create a directory tree with a depth of 4 and a width of 6. **[ -d 4 -w 6 ]**
-* Each directory to be filed with 75 files that have random sizes between 500KiB and 2MiB. **[ -s 500K -l 2M  ]**
+* Each directory to be filed with 75 files that have random sizes between 500KiB and 2MiB. **[ -s 500K -l 2M -n 75]**
 * Each file filled with the complete lower case alphabet. **[ -P 26 ]**
-* Each file to be filled with its random own set on alphabet letters. **[ -r ]**
-* If only the first ten letters of the alphabet required use **-P 10**  
+* Each file to be filled with its own random own of alphabet letters. **[ -r ]**
+* If only the first ten letters of the alphabet required use **-P 10**
+* No uppercase option available  
 ~~~
 $./TFileCreate -P 26 -d 4 -w 6 -s 500K -l 2M -n 75 -r
   
