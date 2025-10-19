@@ -18,10 +18,9 @@ _______________________________________________________________________
 TestFilesCreate is a Linux portable x64 executable created from the bash script [TFile_Create](https://github.com/Jim-JMCD/Test_Files_Create) (private Github repository) using shc.
 
 ### Dependency
-This requires a bash environment to run. 
-An executable created from the *shc* utility always requires bash on x64
+This requires a Linux bash environment to run. Will run in Microsoft WSL2, TrestFilesCreate will not run in MSYS2, Gitbash and Cygwin environmants
 
-More : [Github shc](https://github.com/neurobin/shc)   
+An executable created from the *shc* utility. More : [Github shc](https://github.com/neurobin/shc)   
 _______________________________________________________________________
 [Examples using TestFileCreate to create data](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20create%20data.md)
 
