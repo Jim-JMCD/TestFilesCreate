@@ -26,8 +26,7 @@ _______________________________________________________________________
 
 [Examples using testFileCreate to calculate storage requirements plus directories and files created](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20use%20the%20caculator%20mode.md) 
 
-[testFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/c385fe822281d447462b42fa25789fec1d92cb15/Datasheet-TestFilesCreate.pdf)
-
+[testFilesCreate datasheet ](https://github.com/Jim-JMCD/testFilesCreate/blob/main/Datasheet%20testFilesCreate.pdf)
 _______________________________________________________________________
 
 
@@ -175,7 +174,7 @@ testFileCreate can be used as a standardised benchmark for comparing data storag
 
 In these examples the __Data Complexity__ is set by the __-P option__.  A data complexity of 10 = -P 10 and a data complexity of 12 = -P 12
 
-For more information on the creation of the charts see [testFilesCreate datasheet ](https://github.com/Jim-JMCD/TestFilesCreate/blob/c385fe822281d447462b42fa25789fec1d92cb15/Datasheet-TestFilesCreate.pdf).
+For more information on the creation of the charts see [testFilesCreate datasheet ](https://github.com/Jim-JMCD/testFilesCreate/blob/main/Datasheet%20testFilesCreate.pdf).
 
 ![Test Image](https://github.com/Jim-JMCD/TestFilesCreate/blob/7036c2ac65caa5a5fc59a901c0d0cb65f3de16d9/image)
 
