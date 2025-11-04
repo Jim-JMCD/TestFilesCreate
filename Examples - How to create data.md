@@ -8,7 +8,7 @@ Example 1
 
 This interactive example displays the output to expect when you proceed with file creation. The computer time is used, not UTC.      
 ~~~
-$./TFileCreate -P 28 -d 3 -w 5 -f 15M -n 50
+$./testFileCreate -P 28 -d 3 -w 5 -f 15M -n 50
 
   DIRECTORTY TREE each directory contains 5 directories and 50 files
   The tree is 3 levels deep
@@ -41,7 +41,7 @@ Notes
 * Directing output to a specific directory requires the directory to exist before creating the test data.
 * Batch mode does not require any user input one started.
 ~~~
-$./TFileCreate -P 28 -d 3 -w 5 -f 15M -n 50 -o /home/ted/tmp -b
+$./testFileCreate -P 28 -d 3 -w 5 -f 15M -n 50 -o /home/ted/tmp -b
 
   DIRECTORTY TREE each directory contains 5 directories and 50 files
   The tree is 3 levels deep
@@ -69,7 +69,7 @@ Example 3
 * If only the first ten letters of the alphabet required use **-P 10**
 * No uppercase option available  
 ~~~
-$./TFileCreate -P 26 -d 4 -w 6 -s 500K -l 2M -n 75 -r
+$./testFileCreate -P 26 -d 4 -w 6 -s 500K -l 2M -n 75 -r
   
 DIRECTORTY TREE each directory contains 6 directories and 75 files
   The tree is 4 levels deep
@@ -91,7 +91,7 @@ Example 4
 * If only the first five digits required use **-D 5** 
 
 ~~~~
-$./TFileCreate -D 10 -d 1 -w 1 -f 500G -n 1 -r
+$./testFileCreate -D 10 -d 1 -w 1 -f 500G -n 1 -r
 
   SINGLE DIRECTORY containing 1 files
 
