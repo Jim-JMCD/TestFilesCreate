@@ -1,6 +1,6 @@
-## TestFilesCreate interactive Calculator Mode 
+## testFilesCreate interactive Calculator Mode 
 
-Run as **TestFilesCreate -C** 
+Run as **testFilesCreate -C** 
 
 User input required for tree depth, width, number of files per directory and size of each file
 ~~~
