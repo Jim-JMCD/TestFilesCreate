@@ -1,4 +1,4 @@
-# TestFilesCreate
+# testFilesCreate
 #### This repository only contains X86-64 excutable.  For the ARM version go to [testFilesCreate_for_ARM_aarch64](https://github.com/Jim-JMCD/testFilesCreate_for_ARM_aarch64)
 
 
