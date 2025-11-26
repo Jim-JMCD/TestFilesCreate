@@ -8,7 +8,7 @@
  * Will create a single file to directory trees of files, minimum file size = 2 bytes   
  * Files can be identical or individually filled with random content.
  * File contents can either be printable or binary. All contents generated from /dev/urandom.
- * Selecting the printable pool of characters determines the **comressibility** of file contents.  
+ * Selecting the printable pool of characters determines the **compressibility** of file contents.  
  * Files sizes can be identical or randomly sized within a given range.
  * Run either interactively or unaccompanied in batch mode.
 
@@ -26,7 +26,7 @@ _______________________________________________________________________
 
 [Examples using testFileCreate to calculate storage requirements plus directories and files created](https://github.com/Jim-JMCD/TestFilesCreate/blob/main/Examples%20-%20How%20to%20use%20the%20caculator%20mode.md) 
 
-[testFilesCreate datasheet ](https://github.com/Jim-JMCD/testFilesCreate/blob/main/Datasheet%20testFilesCreate.pdf)
+[testFilesCreate datasheet ](https://github.com/Jim-JMCD/testFilesCreate/blob/main/Datasheet%20testFilesCreate.pdf) - There are known browser issues issues with gitHub displaying PDF files best to download to view. 
 _______________________________________________________________________
 
 
